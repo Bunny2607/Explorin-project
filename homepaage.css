@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    background-color: white;
+
+    padding: 0.4rem 2rem 0.4rem 2rem;
+}
+
+.menu-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#check {
+    display: none;
+}
+
+.menu{
+    width: 1.2rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
+
+    cursor: pointer;
+}
+.logo{
+    object-fit: contain;
+    width: 2rem;
+}
+h1{
+    font: 1.2rem "Calibri";
+    font-weight: 800;
+}
+
+/* ====================================== */
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.searchArea{
+    width: 100%;
+    height: 2.5rem;
+
+    border-radius: 2rem 0 0 2rem;
+    border: 1px solid grey;
+
+    padding-left: 1rem;
+}
+
+.searchBtn{
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    border: 1px solid grey;
+
+    padding: 5px;
+}
+
+.searchLogo{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.mic{
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid grey;
+    border-radius: 50%;
+
+    margin-left: 0.8rem;
+}
+
+.mic-logo{
+    width: 60%;
+    height: 60%;
+}
+/* ======================================= */
+
+.user-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+}
+
+.notifications{
+    width: 1.8rem;
+}
+
+.user{
+    width: 3rem;
+    border-radius: 50%;
+
+}
+/* ============================================ */
+
+.recommendation{
+    display: flex;
+    position: fixed;
+    top: 60.8px;
+    z-index: 3;
+    left: 15rem;
+    right: 0;
+
+    background: white;
+
+    padding: 1rem 0 1rem 0.5rem;
+}
+.recommendation-list{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+    list-style: none;
+    
+    gap: 1rem;
+
+    & li{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:600;
+
+        border: none;
+        background-color: rgb(204, 204, 204);
+
+        padding: 0.3em 1em;
+
+        border: none;
+        border-radius: 0.3em;
+    }
+}
+.sidebar{
+    position: fixed;
+
+    top: 3.8rem;
+    bottom: 0;
+    width: 15rem;
+
+    z-index: 1;
+
+}
+.sidebar-nav{
+    padding: 1rem 0rem 0 0;
+}
+.sidebar-nav li {
+    display: flex;
+    justify-content: left;
+
+    margin-top: 1rem;
+
+    gap: 2rem;
+    padding: 0 0 0 1rem;
+    align-items: center;
+    width: 100%;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+hr{
+    margin: 2rem 1rem 0 1rem;
+}
+
+.side-icons{
+    width: 1.5rem;
+}
+
+.videos-container{
+    height: 100vh;
+
+    padding: 3rem 1rem 0 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    row-gap: 1rem;
+    
+    margin-top: 6rem;
+    margin-left: 15rem;
+}
+
+.video-container{
+    flex:1; 
+    min-width: 10rem;
+}
+
+@media (min-width: 1130px) {
+    .video-container{
+        min-width: 25%;
+    }
+}
+.thumbnail{
+    width: 100%;
+    aspect-ratio: 16/9;
+
+    border-radius: 0.5rem;
+}
+
+
+.video-details{
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 1rem;
+
+    gap: 1rem;
+}
+
+.channel-logo{
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
+.video-title{
+    font: 1.2em 'Calibri';
+    font-weight: 600;
+}
+.channel-name{
+    font: 1em 'Calibri';
+    margin-top: 0.3rem;
+
+}
+.video-stats{
+    font: 1em 'Calibri';
+    
+}
+
+
+
